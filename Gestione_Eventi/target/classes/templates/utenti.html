@@ -1,0 +1,24 @@
+<!-- utenti.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Utenti</title>
+</head>
+<body>
+    <h1>Utenti</h1>
+    <h2>Visualizza Utente</h2>
+    <form action="/utenti/{id}" method="get">
+        <label for="id">ID Utente:</label>
+        <input type="number" id="id" name="id" required>
+        <button type="submit">Visualizza</button>
+    </form>
+    <h2>Elimina Utente</h2>
+    <form action="/utenti/{id}" method="post">
+        <label for="id">ID Utente:</label>
+        <input type="number" id="id" name="id" required>
+        <button type="submit">Elimina</button>
+    </form>
+</body>
+</html>
